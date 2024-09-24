@@ -6,6 +6,8 @@ import { BiCheck } from "react-icons/bi";
 import bitbeelogo from "../../assets/data/bitb.png";
 import { Link } from "react-router-dom";
 import { RiSendPlane2Fill } from "react-icons/ri";
+import whyChoose from "../../components/assets/images/why_choose.png";
+import { PiArrowFatRightFill } from "react-icons/pi";
 
 export const ConsultingServices = () => {
   return (
@@ -29,16 +31,21 @@ export const ConsultingServices = () => {
           <div class="absolute w-4 h-4 top-[180px] right-24 border-2 opacity-30 border-blue-500 rotate-square"></div>
           <div class="absolute w-4 h-4 bottom-[50px] left-10 border-2 opacity-30 border-blue-500 rotate-square"></div>
           <h1 className="text-6xl max-sm:text-4xl py-10 text-orange-500 inria-serif-bold  ">
-          GYPR Consulting Service
+            GYPR Consulting Service
           </h1>
           <p className="text-white xl:px-10 max-sm:text-base text-xl px-4 inria-serif-light ">
-          Tailored Consulting and Staffing Solutions for Your Success
-At GYPRC, we specialize in providing top-quality consulting and staffing solutions designed to help businesses thrive. Whether you're seeking expert guidance to navigate complex business challenges or looking to build a talented team, we deliver customized solutions that meet your unique needs. We are driven by our mission to empower businesses with the right expertise and workforce, setting the stage for long-term success.
-
+            Tailored Consulting and Staffing Solutions for Your Success At
+            GYPRC, we specialize in providing top-quality consulting and
+            staffing solutions designed to help businesses thrive. Whether
+            you're seeking expert guidance to navigate complex business
+            challenges or looking to build a talented team, we deliver
+            customized solutions that meet your unique needs. We are driven by
+            our mission to empower businesses with the right expertise and
+            workforce, setting the stage for long-term success.
           </p>
         </div>
         <div className="container mx-auto py-10 lg:w-[80%] -z-0  ">
-        {/* 
+          {/* 
           <div className="flex justify-center mb-5">
             <div className="flex justify-evenly items-center">
               <img src={bitbeelogo} className="h-[90px] xl:h-[100px]" alt="" />
@@ -51,45 +58,103 @@ At GYPRC, we specialize in providing top-quality consulting and staffing solutio
               </Link>
             </div>
           </div>
-          */}  
+          */}
           <div className="flex justify-center mb-5">
             {/* <h1 className="text-4xl text-navBlue font-semibold ">Social Media Marketing</h1> */}
           </div>
           <div className="px-4">
-          <ul className="text-base text-gray-600 px-3 leading-6">
-            <span className="text-3xl max-sm:text-lg font-semibold inria-serif-bold  text-orange-500 pr-2 ">
-            Consulting Services
-            </span>
-            <li className="mt-2 text-gray-500">
-            Our consulting services are designed to help your organization unlock its full potential, optimize operations, and achieve sustainable growth. We partner with businesses across various industries to provide strategic advice and actionable insights that enable better decision-making, efficient processes, and the ability to respond to market demands effectively.
-
-            </li>
-          
-          </ul>
-
-          <ul className="text-base text-gray-600 px-3 leading-6 mt-5">
-            <span className="text-3xl font-semibold inria-serif-bold text-orange-500 pr-2 text-end  ">
-            Staffing Solutions
-
-            </span>
-            <li className="mt-2 text-gray-500">
-            Building the right team is critical to the success of any organization, and at GYPRC, we make it easier. Our staffing solutions are flexible and tailored to your specific requirements, whether you need temporary staff, long-term hires, or project-based professionals. We specialize in connecting businesses with the best talent, ensuring that you find individuals who are not only skilled but also a perfect fit for your company culture.
-
-            </li>
-
-            <div>
-              <ConsultingCardList seoData={ConsultingDataArray} />
-            </div>
-          </ul>
-          
-        </div>
+            <ul className="text-base text-gray-600 px-3 leading-6 mt-5">
+              <span className="text-3xl font-semibold inria-serif-bold text-orange-500 pr-2 text-end  ">
+                Staffing Solutions
+              </span>
+              <li className="mt-2 text-gray-500">
+                Building the right team is critical to the success of any
+                organization, and at GYPRC, we make it easier. Our staffing
+                solutions are flexible and tailored to your specific
+                requirements, whether you need temporary staff, long-term hires,
+                or project-based professionals. We specialize in connecting
+                businesses with the best talent, ensuring that you find
+                individuals who are not only skilled but also a perfect fit for
+                your company culture.
+              </li>
+            </ul>
+            <ul className="text-base text-gray-600 px-3 leading-6">
+              <span className="text-3xl max-sm:text-lg font-semibold inria-serif-bold  text-orange-500 pr-2 ">
+                Consulting Services
+              </span>
+              <li className="mt-2 text-gray-500">
+                Our consulting services are designed to help your organization
+                unlock its full potential, optimize operations, and achieve
+                sustainable growth. We partner with businesses across various
+                industries to provide strategic advice and actionable insights
+                that enable better decision-making, efficient processes, and the
+                ability to respond to market demands effectively.
+              </li>
+            </ul>
+            <ul className="text-base text-gray-600 px-3 leading-6">
+              <span className="text-3xl max-sm:text-lg font-semibold inria-serif-bold  text-orange-500 pr-2 ">
+                Temporary Staffing
+              </span>
+              <li className="mt-2 text-gray-500">
+                Whether you need additional support for a short-term project, a
+                seasonal surge, or to fill in for absent employees, our
+                temporary staffing services provide the flexibility to meet your
+                needs. We maintain a strong network of qualified professionals
+                who are ready to step in and contribute to your team with
+                minimal onboarding, ensuring your business continues to run
+                smoothly.
+              </li>
+            </ul>
+            <ul className="text-base text-gray-600 px-3 leading-6">
+              <span className="text-3xl max-sm:text-lg font-semibold inria-serif-bold  text-orange-500 pr-2 ">
+                Permanent Placement
+              </span>
+              <li className="mt-2 text-gray-500">
+                We specialize in finding the right talent for permanent
+                positions across a wide range of industries. Our in-depth
+                recruitment process ensures that the candidates we present are
+                not only skilled but also a cultural fit for your organization.
+                By understanding your business goals and values, we ensure that
+                our permanent placements contribute to the long-term success of
+                your company.
+              </li>
+            </ul>
+            <ul className="text-base text-gray-600 px-3 leading-6">
+              <span className="text-3xl max-sm:text-lg font-semibold inria-serif-bold  text-orange-500 pr-2 ">
+                Contract-to-Hire
+              </span>
+              <li className="mt-2 text-gray-500">
+                Our contract-to-hire solution offers a flexible approach to
+                hiring. This allows you to evaluate a candidate’s fit and
+                performance over a trial period before making a permanent offer.
+                This model reduces risk and ensures that you’re making the right
+                decision when hiring for critical roles.
+              </li>
+            </ul>
+            <ul className="text-base text-gray-600 px-3 leading-6 mt-5">
+              <span className="text-3xl max-sm:text-lg font-semibold inria-serif-bold  text-orange-500 pr-2 ">
+                Industry Expertise
+              </span>
+              <li className="mt-2 text-gray-500">
+                At GYPRC, we understand that each industry has unique
+                requirements. That’s why our staffing experts specialize in
+                sourcing talent for specific sectors, including IT, healthcare,
+                finance, manufacturing, and more. Our extensive industry
+                knowledge enables us to match the right candidates with the
+                right companies, ensuring success on both sides.
+              </li>
+              <div>
+                <ConsultingCardList seoData={ConsultingDataArray} />
+              </div>
+            </ul>
           </div>
+        </div>
 
         {/* Our process  */}
         <OurProcess />
+        <WhyChoose />
         <Approach />
       </div>
-      
     </>
   );
 };
@@ -115,7 +180,9 @@ export const OurProcess = () => {
               <span className="">
                 <BiCheck class="text-4xl block font-bold  text-blue-400 " />
               </span>
-              <h1 className="text-2xl text-white inria-serif-bold ">Discover and Define</h1>
+              <h1 className="text-2xl text-white inria-serif-bold ">
+                Discover and Define
+              </h1>
             </div>
 
             <div className="flex gap-2">
@@ -162,34 +229,30 @@ export const Approach = () => {
               <hr className="w-[100px] mx-auto h-[3px] mt-2 text-black bg-black" />
               <ul className="text-start">
                 <li className="mt-5 text-base text-gray-500 inria-serif-light list-disc">
-                <b>Tailored Solutions : </b>
-                We deliver customized strategies that fit your specific business needs, ensuring you get the most effective support.
+                  <b>Tailored Solutions : </b>
+                  We deliver customized strategies that fit your specific
+                  business needs, ensuring you get the most effective support.
                 </li>
                 <li className="mt-5 text-base text-gray-500 inria-serif-light list-disc">
-                 
-        <b>Expert Guidance : </b>
-Our team of seasoned consultants provides insight and advice to help you navigate complex business challenges.
-
+                  <b>Expert Guidance : </b>
+                  Our team of seasoned consultants provides insight and advice
+                  to help you navigate complex business challenges.
                 </li>
                 <li className="mt-5 text-base text-gray-500 inria-serif-light list-disc">
-
-                <b>Talent Acquisition : </b>
-We help you build a skilled workforce, ensuring your team has the right talent for long-term success.
+                  <b>Talent Acquisition : </b>
+                  We help you build a skilled workforce, ensuring your team has
+                  the right talent for long-term success.
                 </li>
                 <li className="mt-5 text-base text-gray-500 inria-serif-light list-disc">
-               <b>Mission-Driven Approach : </b>
-Our goal is to empower your business, equipping you with the tools and expertise necessary for sustainable growth.
+                  <b>Mission-Driven Approach : </b>
+                  Our goal is to empower your business, equipping you with the
+                  tools and expertise necessary for sustainable growth.
                 </li>
                 <li className="mt-5 text-base text-gray-500 inria-serif-light list-disc">
-            <b>Commitment to Success : </b>
-We focus on creating lasting impacts, driving results that contribute to your company's success for years to come.
+                  <b>Commitment to Success : </b>
+                  We focus on creating lasting impacts, driving results that
+                  contribute to your company's success for years to come.
                 </li>
-              
-
-
-           
-
-
               </ul>
             </div>
           </div>
@@ -199,12 +262,15 @@ We focus on creating lasting impacts, driving results that contribute to your co
             </h1>
             <div className="py-4 text-base text-white">
               <p>
-              We understand that every business is unique. Our solutions are customized to meet your specific requirements and industry needs.
+                We understand that every business is unique. Our solutions are
+                customized to meet your specific requirements and industry
+                needs.
               </p>
 
               <p className="mt-6">
-              Ready to elevate your business with expert consulting and staffing solutions? Get in touch with us today to explore how GYPRC can help you achieve your goals.
-
+                Ready to elevate your business with expert consulting and
+                staffing solutions? Get in touch with us today to explore how
+                GYPRC can help you achieve your goals.
               </p>
               <div className="flex justify-center mx-auto mt-16 py-2 rounded-[1px] items-center gap-4 bg-orange-500 hover:bg-orange-400 w-[200px]">
                 <Link to="/contact-us">
@@ -220,6 +286,54 @@ We focus on creating lasting impacts, driving results that contribute to your co
         </div>
       </div>
     </>
+  );
+};
+
+export const WhyChoose = () => {
+  return (
+    <div className="py-5">
+      <div className="text-center">
+        <h1 className="text-4xl font-semibold text-gray-700 inria-serif-bold ">
+          Why Choose Us
+        </h1>
+        <hr className="w-[100px] mx-auto h-[3px] mt-2 text-black bg-black" />
+      </div>
+      <div className="flex flex-col md:flex-row w-[100%] gap-5 md:px-[5rem] px-5 mt-8">
+        <div className="md:w-[50%] w-[100%]">
+          <img className="rounded-md" src={whyChoose} alt="Why Choose Us" />
+        </div>
+        <div className="flex md:w-[50%] w-[100%] flex-col gap-5">
+          <div className="flex gap-2 text-gray-500">
+            <PiArrowFatRightFill className="text-2xl" />
+            <p className="text-base">
+              <span className="font-bold">Fast, Reliable Staffing:</span> We
+              pride ourselves on delivering high-quality candidates quickly,
+              reducing the time-to-hire and minimizing disruption to your
+              operations.
+            </p>
+          </div>
+          <div className="flex gap-2 text-gray-500">
+            <PiArrowFatRightFill className="text-2xl" />
+            <p className="text-base">
+              <span className="font-bold">Tailored Solutions:</span> We
+              understand that every business is different. That’s why we provide
+              customized staffing solutions that align with your specific needs.
+            </p>
+          </div>
+          <div className="flex gap-2 text-gray-500">
+            <PiArrowFatRightFill className="text-2xl" />
+            <p className="text-base">
+              <span className="font-bold">Commitment to Excellence:</span> Our
+              recruitment process is thorough and designed to match top talent
+              with the right opportunities, ensuring long-term success. <br />
+              Partner with GYPRC for your staffing needs and experience the
+              difference that a dedicated, professional team can make for your
+              business.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
