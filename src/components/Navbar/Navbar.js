@@ -8,16 +8,14 @@ export const menuItems = [
   {
     label: "Services",
     dropdown: [
-      
       { label: "Marketing/SEO ", link: "/product/digital-services" },
       { label: "Educational Services ", link: "/product/educational-services" },
       { label: "FoodService", link: "/product/foody-services" },
       { label: "Health Care", link: "/product/health-care" },
       { label: "GYPR Consulting ", link: "/product/consulting" },
-
     ],
   },
-  { label: "Gallery", link: "/gallery" },
+  // { label: "Gallery", link: "/gallery" },
 
   { label: "Contact Us", link: "/contact-us" },
 ];
@@ -67,17 +65,17 @@ export const Navbar = () => {
             <div className="w-[100%] flex justify-between">
               {/* logo */}
               <div className="md:order-1 w-1/2 max-sm:w-full sm:w-full flex lg:items-start sm:items-center sm:justify-center  lg:justify-start px-2 py-2 lg:bg-navbg1 sm:bg-white max-sm:bg-white">
-                <div >
-                 <Link to="/" className="flex items-center justify-start">
-                 <img
-                    src={logo}
-                    alt="Logo"
-                    className="lg:h-[74px] lg:w-[80px] max-sm:h-[63px] sm:h-[50px] sm:w-[60px] bg-white rounded-full p-[2px] max-sm:w-[60px]"
-                  />
-                  <span className="text-white text-lg max-sm:text-base max-md:text-base bg-orange-500 px-[6px] py-[2px] rounded-sm">
-                    Pushing up performance
-                  </span>
-                 </Link>
+                <div>
+                  <Link to="/" className="flex items-center justify-start">
+                    <img
+                      src={logo}
+                      alt="Logo"
+                      className="lg:h-[74px] lg:w-[80px] max-sm:h-[63px] sm:h-[50px] sm:w-[60px] bg-white rounded-full p-[2px] max-sm:w-[60px]"
+                    />
+                    <span className="text-white text-lg max-sm:text-base max-md:text-base bg-orange-500 px-[6px] py-[2px] rounded-sm">
+                      Pushing up performance
+                    </span>
+                  </Link>
                 </div>
               </div>
 

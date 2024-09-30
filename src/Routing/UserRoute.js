@@ -48,18 +48,96 @@ export const UserRoute = () => {
     <>
       <ScrollToTop /> {/* Add this line */}
       <Routes>
-        <Route path="/" element={ <Layout> <Home /> </Layout> }/>
-        <Route path="/about-us" element={ <Layout> <AboutUs /> </Layout> }/>
-        <Route path="/products" element={<Layout> <Products /> </Layout>}/>
-        <Route path="/contact-us" element={ <Layout><ContactUsPage /></Layout>     }/>
-        <Route path="/product/foody-services" element={ <Layout> <FoodServices /> </Layout>} />
-        <Route path="/product/health-care" element={ <Layout> <HealthCare /> </Layout>} />
-        <Route path="/product/educational-services" element={ <Layout><EducationalS /> </Layout>} />
-        <Route path="/product/digital-services" element={ <Layout> <DigitalS /> </Layout>} />
-        <Route path="/product/consulting" element={ <Layout> <ConsultingServices/> </Layout>} />
-        <Route path="/gallery" element={ <Layout> <Gallery2 /> </Layout> }/>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              {" "}
+              <Home />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/about-us"
+          element={
+            <Layout>
+              {" "}
+              <AboutUs />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/products"
+          element={
+            <Layout>
+              {" "}
+              <Products />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/contact-us"
+          element={
+            <Layout>
+              <ContactUsPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/product/foody-services"
+          element={
+            <Layout>
+              {" "}
+              <FoodServices />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/product/health-care"
+          element={
+            <Layout>
+              {" "}
+              <HealthCare />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/product/educational-services"
+          element={
+            <Layout>
+              <EducationalS />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/product/digital-services"
+          element={
+            <Layout>
+              {" "}
+              <DigitalS />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/product/consulting"
+          element={
+            <Layout>
+              {" "}
+              <ConsultingServices />{" "}
+            </Layout>
+          }
+        />
+        {/* <Route path="/gallery" element={ <Layout> <Gallery2 /> </Layout> }/> */}
 
-        <Route path="/thanks" element={ <Layout> <Thanks /> </Layout> }/>
+        <Route
+          path="/thanks"
+          element={
+            <Layout>
+              {" "}
+              <Thanks />{" "}
+            </Layout>
+          }
+        />
       </Routes>
       <Routes>
         <Route path="/login" element={<Login />} />

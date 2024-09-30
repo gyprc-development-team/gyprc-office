@@ -17,20 +17,21 @@ import { NavLink } from "react-router-dom";
 export const slides = [
   {
     title:
-      "GYPRC - Education (TeacherCool) - Empowering Minds, Shaping Futures",
-    subtitle:
-      "Explore a vast array of information and prospects with GYPRC - Education. Our primary platform, TeacherCool.com, provides a vast array of IT-related courses. Our courses, which cover everything from cybersecurity to programming languages, are meant to give you the skills and knowledge you need to thrive in the digital world. TeacherCool.com is your doorway to a more promising future in IT, offering flexible study options, engaging learning tools, and expert teachers.",
-    buttonText: "Talk to an Expert",
-    image: teachercool,
-  },
-  {
-    title:
       "GYPRC - Empowering innovation, collaboration, and sustainability for a brighter future",
     // title2: '“GYPRC - Fostering excellence, growth, and positive impact through synergy and innovation”',
     subtitle:
       "GYPRC - Fostering excellence, growth, and positive impact through synergy and innovation. Explore a vast array of information and prospects with GYPRC - Education. Our primary platform, TeacherCool.com, provides a vast array of IT-related courses. ",
     image: gypr,
   },
+  {
+    title:
+      "GYPRC - Education (TeacherCool) - Empowering Minds, Shaping Futures",
+    subtitle:
+      "Explore a vast array of information and prospects with GYPRC - Education. Our primary platform, TeacherCool.com, provides a vast array of IT-related courses. Our courses, which cover everything from cybersecurity to programming languages, are meant to give you the skills and knowledge you need to thrive in the digital world. TeacherCool.com is your doorway to a more promising future in IT, offering flexible study options, engaging learning tools, and expert teachers.",
+    buttonText: "Talk to an Expert",
+    image: teachercool,
+  },
+
   {
     title:
       "GYPRC - Digital Marketing (BitBeeMedia.com) - Digital Solutions for a Digital World",
